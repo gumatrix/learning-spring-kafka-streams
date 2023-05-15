@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: spring-kafka-streams-app
+  kafka:
+    bootstrap-servers: localhost:9092
+    streams:
+      application-id: spring-kafka-streams-app
+
+management:
+  elastic:
+    metrics:
+      export:
+        host: http://localhost:9200
+  tracing:
+    sampling:
+      probability: 1.0
+
+logging:
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+  level:
+    org.examples: info

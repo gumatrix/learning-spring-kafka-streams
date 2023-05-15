@@ -1,0 +1,6 @@
+spring:
+  kafka:
+    streams:
+      cleanup:
+        on-startup: true
+        on-shutdown: true
